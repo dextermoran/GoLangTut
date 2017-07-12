@@ -2,12 +2,14 @@ package main
 
 import "fmt"
 
+#exported
 var MyName = "Dexter"
 
 func main() {
   var lastName string
   lastName = "moran"
 
+  #not exported
   var fullname string = "Dexter moran"
 
   shrthnd := 111
