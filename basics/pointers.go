@@ -10,7 +10,7 @@ func main() {
    fmt.Println("a - ", a)
    fmt.Println("a's mem address", &a)
 }
-*/
+
 
 const metersToYards float64 = 1.09361
 
@@ -20,4 +20,18 @@ func main() {
   fmt.Scan(&meters)
   yards := meters * metersToYards
   fmt.Println(meters, "meters is", yards, " Yards")
+}
+
+*/
+
+func main() {
+  a := 43
+
+  fmt.Println(a)
+  fmt.Println(&a)
+
+  var b *int = &a
+
+  fmt.Println(b)
+  fmt.Println(*b)
 }
