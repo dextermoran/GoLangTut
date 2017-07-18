@@ -1,9 +1,9 @@
 package main
 
 import (
-  "net/http"
-  "io/ioutil"
-  "fmt"
+	"fmt"
+	"io/ioutil"
+	"net/http"
 )
 
 /*  (must import "log" as well)
@@ -24,8 +24,8 @@ func main() {
 
 //the same thing w/ blank identifiers in place of err variables (no error handling)
 func main() {
-  res, _ := http.Get("https://www.google.com")
-  page, _ := ioutil.ReadAll(res.Body)
-  res.Body.Close()
-  fmt.Printf("%s", page)
+	res, _ := http.Get("https://www.google.com")
+	page, _ := ioutil.ReadAll(res.Body)
+	res.Body.Close()
+	fmt.Printf("%s", page)
 }

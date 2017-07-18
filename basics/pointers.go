@@ -25,13 +25,13 @@ func main() {
 */
 
 func main() {
-  a := 43
+	a := 43
 
-  fmt.Println(a)
-  fmt.Println(&a)
+	fmt.Println(a)
+	fmt.Println(&a)
 
-  var b *int = &a
+	var b *int = &a
 
-  fmt.Println(b)
-  fmt.Println(*b)
+	fmt.Println(b)
+	fmt.Println(*b)
 }
